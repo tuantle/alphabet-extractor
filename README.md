@@ -112,7 +112,7 @@ Finally, using the last set `[ 'd', 'c']`, connect vertex `d` and `c`. At this p
     <img width="25%" height="25%" src="assets/dtg-connecting-step3.png">
 </p>
 
-**3** - With a fully connected DTG, travel up the tree, starting from root vertex, and determine all possible paths of visited vertices. And the longest path of visited vertices would have the complete information of the alphabetical order that we are looking for.
+**3** - With a fully connected DTG, travel up the tree starting from root vertex, and determine all possible paths of visited vertices. And the longest path of visited vertices would have the complete information of the alphabetical order that we are looking for.
 
 <p align="center">
     <img width="50%" height="50%" src="assets/dtg-all-paths.png">

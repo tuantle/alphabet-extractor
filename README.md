@@ -94,23 +94,23 @@ const getOrderedCharSet = (words) => {
 
 From the example, the character ordered set information we have are `[ 'b', 'a', 'd']`, `[ 'a', 'c' ]`, and `[ 'd', 'c' ]`. Each character in the set can be viewed as a vertex and the left to right ordering can be viewed as an edge connection between two vertices.
 
-<p align="center">
-    <img width="25%" height="25%" src="assets/dtg-connecting-step1.png">
-</p>
-
 Using the first set `[ 'b', 'a', 'd']`, connect vertex `b` and `a`, then connect vertex `a` and `d`.
 
 <p align="center">
-    <img width="25%" height="25%" src="assets/dtg-connecting-step2.png">
+    <img width="25%" height="25%" src="assets/dtg-connecting-step1.png">
 </p>
 
 Using the second set `[ 'a', 'c']`, connect vertex `a` and `c`.
 
 <p align="center">
-    <img width="25%" height="25%" src="assets/dtg-connecting-step3.png">
+    <img width="25%" height="25%" src="assets/dtg-connecting-step2.png">
 </p>
 
 Finally, using the last set `[ 'd', 'c']`, connect vertex `d` and `c`. At this point we have a fully connected DTG showing the overall topology.
+
+<p align="center">
+    <img width="25%" height="25%" src="assets/dtg-connecting-step3.png">
+</p>
 
 **3** - With a fully connected DTG, traverse up the DTG, starting from root vertex, and determine all possible paths of visited vertices. And the longest path of visited would have the complete information of the alphabetical order that we are looking for.
 

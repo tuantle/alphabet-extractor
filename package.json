@@ -1,0 +1,41 @@
+{
+    "name": "alphabet-extractor",
+    "version": "0.1.0",
+    "registry": "github",
+    "description": "Extract alphabet order of a given sorted word list",
+    "license": "MIT",
+    "homepage": "https://github.com/tuantle/alphabet-extractor",
+    "authors": [
+        "Tuan Le <tuan.t.lei@gmail.com> (https://github.com/tuantle)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tuantle/alphabet-extractor.git"
+    },
+    "main": "src/alphabet-order-extractor.js",
+    "directories": {
+        "lib": "src"
+    },
+    "engines": {
+        "node": ">=10.x",
+        "npm": ">=6.x"
+    },
+    "dependencies": {
+        "tape": ">=4.9.x"
+    },
+    "devDependencies": {
+        "@babel/core": ">=7.5.x",
+        "@babel/node": ">=7.5.x",
+        "@babel/plugin-proposal-object-rest-spread": ">=7.5.x",
+        "@babel/plugin-transform-strict-mode": ">=7.2.x",
+        "@babel/preset-env": ">=7.5.x",
+        "@babel/register": ">=7.5.x",
+        "@babel/runtime": ">=7.5.x",
+        "babel-eslint": ">=10.0.x",
+        "eslint": ">=6.2.x",
+        "tape": ">=4.11.x"
+    },
+    "scripts": {
+        "start-unit-tests": "NODE_ENV=development babel-node ./__tests__/run-unit-tests"
+    }
+}

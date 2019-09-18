@@ -88,7 +88,7 @@ const getOrderedCharSet = (words) => {
     return orderedChars.filter((orderedChar) => orderedChar.length > 1);
 };
 ```
-[*source: alphabet-extractor.js*](https://github.com/tuantle/src/alphabet-extractor.js)
+[*source: alphabet-extractor.js*](https://github.com/tuantle/alphabet-extractor/blob/master/src/alphabet-extractor.js)
 
 **2** - With the character ordered set information, it is not obvious on how to give the instructions that would to extract the complete set of the alphabet because all the ordered set pieces are disjointed. We need to put them together into a data structure that would make the topology obvious. A directed tree graph (DTG) would be the most appropriate to create a topology map for this.
 
@@ -442,7 +442,7 @@ DTG.prototype = {
 };
 ```
 
-[*source: directed-graph-tree.js*](https://github.com/tuantle/src/directed-graph-tree.js)
+[*source: directed-graph-tree.js*](https://github.com/tuantle/alphabet-extractor/blob/master/src/directed-graph-tree.js)
 
 #### Putting It All Together
 
@@ -523,7 +523,7 @@ const extractAlphabetChars = (words) => {
 ```javascript
 console.log(extractAlphabetChars([ `bca`, `aaa`, `acb`, `ddb`, `dca` ])); // Output: [ `b`, `a`, `d`, `c` ]
 ```
-[*source: alphabet-extractor.js*](https://github.com/tuantle/src/alphabet-extractor.js)
+[*source: alphabet-extractor.js*](https://github.com/tuantle/alphabet-extractor/blob/master/src/alphabet-extractor.js)
 
 ##### Extra
 
@@ -599,7 +599,7 @@ test(`\tRunning unit test for extractAlphabetChars - should be able to get the c
 });
 ```
 
-[*source: alphabet-extractor-unit-tests.js*](https://github.com/tuantle/alphabet-extractor/__tests__/alphabet-extractor-unit-tests.js)
+[*source: alphabet-extractor-unit-tests.js*](https://github.com/tuantle/alphabet-extractor/blob/master/__tests__/alphabet-extractor-unit-tests.js)
 
 Test coverage for DTG implementation:
 
@@ -695,4 +695,4 @@ test(`\tRunning unit test for directed graph tree - should be able to get all po
 });
 ```
 
-[*source: directed-graph-tree-unit-tests.js*](https://github.com/tuantle/alphabet-extractor/__tests__/directed-graph-tree-unit-tests.js)
+[*source: directed-graph-tree-unit-tests.js*](https://github.com/tuantle/alphabet-extractor/blob/master/__tests__/directed-graph-tree-unit-tests.js)

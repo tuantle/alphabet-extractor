@@ -564,6 +564,7 @@ In the alphabet-extractor folder, install the required `babel` (for es6 features
 ```
 
 ```bash
+git clone https://github.com/tuantle/alphabet-extractor.git
 cd alphabet-extractor
 npm install
 ```

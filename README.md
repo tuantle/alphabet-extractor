@@ -541,6 +541,7 @@ From the problem statement, it is assume that the given words are sorted and hav
 <p align="center">
     <img width="25%" height="25%" src="assets/dtg-looped-path.png">
 </p>
+
 * * *
 
 ### Running Test Cases

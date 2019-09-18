@@ -100,7 +100,7 @@ const getOrderedCharSet = (words) => {
  *                      Input:  [ bca, aaa, acb, ddb, dca ]
  *                      Output: [ b, a, d, c ]
  *
- *                Algrorithm steps:
+ *                Algorithm steps:
  *                      1) get a set unique chars from word list which should be:
  *                         [ a, b, d, c ]
  *                      2) get a set of ordered chars from word list which should be:

@@ -112,7 +112,7 @@ Finally, using the last set `[ 'd', 'c']`, connect vertex `d` and `c`. At this p
     <img width="25%" height="25%" src="assets/dtg-connecting-step3.png">
 </p>
 
-**3** - With a fully connected DTG, traverse up the DTG, starting from root vertex, and determine all possible paths of visited vertices. And the longest path of visited would have the complete information of the alphabetical order that we are looking for.
+**3** - With a fully connected DTG, travel up the tree, starting from root vertex, and determine all possible paths of visited vertices. And the longest path of visited vertices would have the complete information of the alphabetical order that we are looking for.
 
 <p align="center">
     <img width="50%" height="50%" src="assets/dtg-all-paths.png">
@@ -150,7 +150,7 @@ DTG.prototype = {
      * @method _traverse
      * @param {object} startingNode - starting vertex's node
      * @param {array} visitedVertices - a list of visited vertices
-     * @param {function} collect - a callback to collect the path after reaching the end
+     * @param {function} collect - a callback to collect the visited vertices
      * @returns {array}
      */
     _traverse: function (startingNode, visitedVertices, collect) {
@@ -462,7 +462,7 @@ Now we finally can put together all the steps above and create a function that e
  *                      Input:  [ bca, aaa, acb, ddb, dca ]
  *                      Output: [ b, a, d, c ]
  *
- *                Algrorithm steps:
+ *                Algorithm steps:
  *                      1) get a set unique chars from word list which should be:
  *                         [ a, b, d, c ]
  *                      2) get a set of ordered chars from word list which should be:
@@ -536,7 +536,7 @@ From the problem statement, it is assume that the given words are sorted and hav
 
 **2** - If the provided word list is not correctly sorted:
 
--   We can check for loop connection in DTG. A correctly sorted word list should have no loop. An example of an unsorted list: `[ 'bca', 'aca', 'aab', 'ddb', 'dca' ]`
+-   We can check for loop connection in DTG. A correctly sorted word list should have no loop. An example of an unsorted word list with a loop: `[ 'bca', 'aca', 'aab', 'ddb', 'dca' ]`
 
 <p align="center">
     <img width="25%" height="25%" src="assets/dtg-looped-path.png">
@@ -547,8 +547,8 @@ From the problem statement, it is assume that the given words are sorted and hav
 
 #### Installing:
 
-The solution was implemented using javascript so make sure Node.js is install.
-In the alphabet-extractor folder, install the required `babel` (for es6 features) and `tape` (as test runner) packages using `npm`. Below is a complete list of dependency packages.
+The solution was implemented using javascript and required `Node.js` & `npm`.
+In the alphabet-extractor folder, install the required `babel` (for es6 features) and `tape` (as test runner) packages using `npm` installer. Below is a complete list of dependency packages.
 
 ```json
 "@babel/core": ">=7.5.x",

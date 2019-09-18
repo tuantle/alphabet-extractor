@@ -24,7 +24,7 @@ DTG.prototype = {
      * @method _traverse
      * @param {object} startingNode - starting vertex's node
      * @param {array} visitedVertices - a list of visited vertices
-     * @param {function} collect - a callback to collect the path after reaching the end
+     * @param {function} collect - a callback to collect the visited vertices
      * @returns {array}
      */
     _traverse: function (startingNode, visitedVertices, collect) {
